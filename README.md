@@ -17,17 +17,22 @@ Lambda Functions: Develop Lambda functions for processing API requests, sending 
 Amazon S3 Bucket: Create a bucket to store HTML email templates, image assets, and CSV files containing subscriber lists or campaign data.
 SES Configuration: Set up SES to verify your domain, configure email sending options, and handle bounce/complaint notifications.
 EventBridge Rules: Create EventBridge rules to trigger Lambda functions based on events like new subscriptions, campaign scheduling, or email opens/clicks.
+
 **2. Design the Application Architecture**
+
 **3. Develop Lambda Functions**
 Write Lambda function code in your preferred programming language (e.g., Python) to implement the application's backend logic.
+
 **4. Create Email Templates**
 Create HTML email templates for your campaigns that include dynamic content placeholders for subscriber names, promo codes, and tailored suggestions. Upload these templates to your S3 bucket so that Lambda functions can easily access them.
+
 **5. Implement API Endpoints**
 Configure API Gateway APIs to do a variety of tasks such as subscribing/unsubscribing users, creating/editing campaigns, retrieving subscriber data, and tracking email engagement metrics. Use authentication and authorization techniques to secure these endpoints as needed.
+
 **6. Configure EventBridge Rules**
 Configure EventBridge rules to gather important events from API Gateway, SES, S3, and other AWS services. Create a rule that triggers a Lambda function when a new subscriber is added, a campaign is set to run, or an email bounce happens.
+
 **7. Test and Deploy**
 Test your application rigorously to confirm that all features work as planned. Use AWS resources such as the Lambda console, API Gateway test console, and SES email sending tests to validate various components. Once you're satisfied, deploy your serverless application to the AWS cloud for production use.
-
 
 *there might be some time-delays in receiving the email, also it will be sent directly to your spam mailbox since I'm using an unverified domain.
