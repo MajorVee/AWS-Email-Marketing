@@ -36,3 +36,5 @@ Configure EventBridge rules to gather important events from API Gateway, SES, S3
 Test your application rigorously to confirm that all features work as planned. Use AWS resources such as the Lambda console, API Gateway test console, and SES email sending tests to validate various components. Once you're satisfied, deploy your serverless application to the AWS cloud for production use.
 
 *there might be some time-delays in receiving the email, also it will be sent directly to your spam mailbox since I'm using an unverified domain.
+
+![1711708434577](https://github.com/user-attachments/assets/bdb7edfd-48e9-4a3f-ae63-f0d398a7735e)
